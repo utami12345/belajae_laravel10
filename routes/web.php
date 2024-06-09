@@ -76,6 +76,8 @@ Route::get('/guru/hapus_permanen/{id}', 'App\Http\Controllers\GuruController@hap
 
 Route::get('/guru/hapus_permanen_semua', 'App\Http\Controllers\GuruController@hapus_permanen_semua');
 
+Route::get('guru/cari', 'App\Http\Controllers\GuruController@cari')->name('cari');
+
 Route::get('/pengguna','App\Http\Controllers\PenggunaController@index');
 
 Route::get('/article', 'App\Http\Controllers\WebController@index');
